@@ -3,10 +3,10 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public Rigidbody rb;
+    [SerializeField] private Rigidbody rb;
 
-    public float forwardForce = 1250f;
-    public float sidewardForce = 750f;
+    [SerializeField] private float forwardForce = 1250f;
+    [SerializeField] private float sidewardForce = 750f;
      
     void FixedUpdate()
     {
@@ -19,6 +19,10 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKey("a"))
         {
             rb.AddForce(0, 0, sidewardForce * Time.deltaTime, ForceMode.VelocityChange);
+        }
+        if (rb.position.y < -5)
+        {
+            FindObjectOfType<GameManager> ().EndGame(); 
         }
     }
 }

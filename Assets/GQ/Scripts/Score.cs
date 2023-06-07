@@ -4,8 +4,8 @@ using TMPro;
 
 public class Score : MonoBehaviour
 {
-    public Transform player;
-    public TextMeshProUGUI scoreText;
+    [SerializeField] Transform player;
+    [SerializeField] TextMeshProUGUI scoreText;
 
        void Update()
     {

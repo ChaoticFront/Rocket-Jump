@@ -35,7 +35,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &597600477901362575
 MeshFilter:
@@ -149,7 +149,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 8023128792668325666}
   forwardForce: 7000
-  sidewardForce: 100
+  sidewardForce: 50
+  joystick: {fileID: 0}
 --- !u!114 &6795218066046723944
 MonoBehaviour:
   m_ObjectHideFlags: 0

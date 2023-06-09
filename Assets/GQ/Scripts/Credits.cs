@@ -10,6 +10,6 @@ public class Credits : MonoBehaviour
     }
     public void RestartGame()
     {
-        SceneManager.LoadScene(0); // Загружаем сцену с индексом 0 (первый уровень)
+        SceneManager.LoadScene(1); 
     }
 }
